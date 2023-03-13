@@ -1,17 +1,31 @@
-import About from "./components/About";
-import Home from "./components/Home";
+import Home from "./pages/Home";
+import Motkraft from "./pages/Motkraft";
+import Layout from "./pages/Layout";
 import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
+
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
-      <Portfolio />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="motkraft" element={<Motkraft />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
+    
   );
 }
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
 
 export default App;

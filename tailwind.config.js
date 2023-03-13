@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'lynette-red': '#EB6565',
+        'description': '#656565',
+      }
+    },
     fontFamily: {
       signature: ['Great Vibes'],
     }
