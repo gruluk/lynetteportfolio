@@ -2,6 +2,8 @@ import React from 'react'
 import motkraft_in_head from '../Assets/motkraft-in-head.png'
 import motkraft_app_1 from '../Assets/motkraft-app-1.png'
 import motkraft_app_2 from '../Assets/motkraft-app-2.png'
+import user_test from '../Assets/user-test.png'
+import fire_flower from '../Assets/fire-flower.png'
 import smidig_prosjekt from '../Assets/smidig-prosjekt-head.png'
 import strom_applikasjon from '../Assets/strom-applikasjon.png'
 import {MdKeyboardArrowRight} from 'react-icons/md'
@@ -103,9 +105,9 @@ function Motkraft() {
 
             {/* Project Goals */}
 
-            <div className='max-w-screen-lg mx-auto flex flex-row justify-center space-x-28 mt-28 px-20'>
+            <div className='max-w-screen-lg mx-auto flex flex-row justify-center space-x-40 mt-28 px-20'>
 
-                <div className='mt-10 text-[40px]'>
+                <div className='mt-10 text-[30px]'>
                     <p className='hover:break-all'>Project Goals</p>
                 </div>
 
@@ -134,6 +136,171 @@ function Motkraft() {
 
             </div>
 
+            {/* Process */}
+
+            <div className='max-w-screen-lg mx-auto flex flex-row justify-center space-x-28 mt-28 px-20'>
+
+                <div className='text-[30px]'>
+                    <p className='justify-start'>Research & Design Thinking</p>
+                </div>
+
+                <div className='space-y-10 justify-start'>
+
+                    <div className='flex justify-start space-x-16'>
+                        <div>
+                            <p className="text-lynette-red">1.</p>
+                            <p>Competitive analysis</p>
+                        </div>
+                        <div>
+                            <p className="text-lynette-red">2.</p>
+                            <p>Customer journey</p>
+                        </div>
+                    </div>
+
+                    <div className='flex justify-start space-x-36'>
+                        <div>
+                            <p className="text-lynette-red">3.</p>
+                            <p>Personas</p>
+                        </div>
+                        <div>
+                            <p className="text-lynette-red">4.</p>
+                            <p>User interviews</p>
+                        </div>
+                    </div>
+
+                    <div className='flex justify-start space-y-20'>
+                        <div>
+                            <p className="text-lynette-red">5.</p>
+                            <p>Sketches and Wireframing</p>
+                        </div>
+                        <div>
+                            <p className="text-lynette-red">6.</p>
+                            <p>Information archetecture</p>
+                        </div>
+                    </div>
+                    
+                    <div className='flex justify-start'>
+                        <div>
+                            <p className="text-lynette-red">7.</p>
+                            <p>User testing</p>
+                        </div>
+                        <div>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div className='max-w-screen-lg flex mt-10 mb-10 px-20'>
+                        <p>By synthesising the research findings, we were able to identify several key areas for improvement in the app redesign. </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            {/* user test */}
+
+            <div className='max-w-screen-lg mx-auto flex flex-col mt-28 px-20'>
+                <div>
+                    <img src={user_test} alt="my profile" className=' w-54 md:w-96' />
+                </div>
+                <p className='text-[13px] justify-center'>
+                    Board of notes after user testing some of our customers
+                </p>
+
+                <div className='mt-28 px-20'>
+
+                    <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                        <p className="text-lynette-red">1.</p>
+                        <p>Simplify the app's navigation to make it easier for users to find speciffic features.</p>
+                    </div>
+
+                    <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                        <p className="text-lynette-red">2.</p>
+                        <p>Remove clutter. There were several screens connected in the app that had no functionality</p>
+                    </div>
+
+                    <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                        <p className="text-lynette-red">3.</p>
+                        <p>Addressing remaining pain points identified through usability testing.</p>
+                    </div>
+
+                    <div className='max-w-screen-lg flex mt-10 mb-10 px-20'>
+                        <p>By synthesising the research findings, we were able to identify several key areas for improvement in the app redesign. </p>
+                    </div>
+                </div>
+
+            </div>
+
+        {/* Version Fire Flower */}
+        <div className='mt-10 mb-28 flex justify-center'>
+            <h1 className="text-[25px]">Version Fire Flower</h1>
+        </div>
+
+        <div className='flex justify-center'>
+            <img src={fire_flower} alt="my profile" className=' w-32 md:w-96' />
+        </div>
+
+        <div className='flex justify-center mt-10 mb-10 ml-72 mr-72'>
+            <p className='text-[14px]'>The application is still in development and I am working closely with the product owner to finalise this project before taking on new exciting adventures.</p>
+        </div>
+
+        {/* Motkraft app images */}
+
+        <div className='max-w-screen-lg mx-auto flex flex-row items-center justify-center mt-28 px-20'>
+            <div>
+                <img src={motkraft_app_1} alt="my profile" className='mx-auto w-24 md:w-48' />
+            </div>
+
+            <div>
+                <img src={motkraft_app_2} alt="my profile" className='mx-auto w-24 md:w-48' />
+            </div>
+        </div>
+
+        {/* Reach goal? */}
+
+        <div className='mt-20 mb-28 max-w-screen-lg mx-auto px-20 items-center'>
+            <h1 className="text-[20px]">Reach goals?</h1>
+        </div>
+
+        <div className='mt-28 px-20'>
+
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                <p className="">1.</p>
+                <p>New brand identity - collaborated with Workhorse AS</p>
+            </div>
+
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                <p className="">2.</p>
+                <p>Complete new navigation and information architecture</p>
+            </div>
+
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                <p className="">3.</p>
+                <p>Includes more functionality in order for the users to havea more interactive and informational experience with their energy consumption</p>
+            </div>
+
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                <p className="">4.</p>
+                <p>Rating went from .. in App stor and .. in Google play to </p>
+            </div>
+
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20 space-x-5'>
+                <p className="">5.</p>
+                <p>Customers are more content with their application and has positive feedback regarding both the dark and light mode</p>
+            </div>
+
+        </div>
+
+        {/* Lessons */}
+        <div className='mt-20 mb-10 max-w-screen-lg mx-auto px-20 items-center'>
+            <h1 className="text-[20px]">Lessons</h1>
+        </div>
+
+        <div className='max-w-screen-lg mx-auto px-20 items-center mb-10'>
+            <div className='text-[14px] whitespace-pre-line'>Working on Motkrafts application as the only designer and being a fulltime student working on a bachelors degree in interaction design has been challenging but extremely rewarding. I have learnt a lot about both myself and how to navigate working on an app that is in constant change with a hectic environment where we had to deliver good results often. 
+
+            The app is still in evolvement and new tasks are added everyday. </div>
+        </div>
 
     </div>
     

@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import Motkraft from "./pages/Motkraft";
 import Layout from "./pages/Layout";
+import About from "./pages/About"
 import NavBar from "./components/NavBar";
 
 import ReactDOM from "react-dom";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="motkraft" element={<Motkraft />} />
+            <Route path="about" element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>

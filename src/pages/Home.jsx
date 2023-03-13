@@ -25,7 +25,7 @@ const Home = () => {
         <div class="flex flex-col md:flex-row mt-4 space-x-16">
 
           <div>
-            <Link to="/Motkraft">
+            <Link to="/About">
               <img src={smidig_prosjekt} alt="smidig prosjekt" className='mx-auto w2/3 md:w-full' />
             </Link>
             <p className='text-30px font-normal inline mt-3 w-full'>
