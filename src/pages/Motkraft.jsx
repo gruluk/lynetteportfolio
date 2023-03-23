@@ -11,51 +11,52 @@ import { Link, BrowserRouter, Routes } from 'react-router-dom'
 
 function Motkraft() {
     return (
-    <div name='home' className='h-screen w-full bg-white'>
+    <div name='home' className='h-screen w-full bg-white px-20'>
       
-        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center mt-3 px-20'>
+        <div className='max-w-screen-lg flex flex-col items-center justify-center mt-4 m-auto w-full'>
             {/* Top image */}
             <div>
                 <img src={motkraft_in_head} alt="my profile" className='mx-auto w2/3 md:w-full' />
             </div>
         
             {/* Image description */}
-            <div className='flex flex-row justify-center space-x-20 mt-10'>
-                <div className='flex flex-col space-y-2'>
-                    <p className='text-[18px]'>Company</p>
-                    <p className='text-[25px]'>Motkraft</p>
-                </div>
+            <div className='w-full'>
+                <div className='flex mt-10 gap-8'>
+                    <div className='flex flex-col space-y-2 w-1/4'>
+                        <p className='text-[18px]'>Company</p>
+                        <p className='text-[25px]'>Motkraft</p>
+                    </div>
 
-                <div className='flex flex-col space-y-2'>
-                    <p className='text-[18px]'>My role</p>
-                    <p className='text-[25px]'>UX Design</p>
-                    <p className='text-[25px]'>UI Desing</p>
-                </div>
+                    <div className='flex flex-col space-y-2 w-1/4'>
+                        <p className='text-[18px]'>My role</p>
+                        <p className='text-[25px]'>UX Design</p>
+                        <p className='text-[25px]'>UI Desing</p>
+                    </div>
 
-                <div className='flex flex-col space-y-2'>
-                    <p className='text-[18px]'>Duration</p>
-                    <p className='text-[25px]'>Internship summer of 2022</p>
-                    <p className='text-[25px]'>Part-time job from September 2022</p>
-                </div>
+                    <div className='flex flex-col space-y-2 w-1/4'>
+                        <p className='text-[18px]'>Duration</p>
+                        <p className='text-[25px]'>Internship summer of 2022</p>
+                        <p className='text-[25px]'>Part-time job from September 2022</p>
+                    </div>
 
-                <div className='flex flex-col space-y-2'>
-                    <p className='text-[18px]'>Summary</p>
-                    <p className='text-[25px]'>I lead UI and UX design on the Mokraft app</p>
+                    <div className='flex flex-col space-y-2 w-1/4'>
+                        <p className='text-[18px]'>Summary</p>
+                        <p className='text-[25px]'>I lead UI and UX design on the Mokraft app</p>
+                    </div>
                 </div>
             </div>
-
         </div>
 
             {/* About Motkraft */}
-            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20'>
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10'>
                 <h1 className="text-[25px] text-lynette-red">Motkraft</h1>
             </div>
 
-            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20'>
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10'>
                 <p>Motkraft is a startup energy company making a great mark on the Norwegian population. They started as a non-profit organisation wanting to change the energy market which is highly motivated by money within the industry. Their goal is to keep the prices as low as possible and not earn money on their customers. </p>
             </div>
 
-            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10 px-20'>
+            <div className='max-w-screen-lg mx-auto flex items-center mt-10 mb-10'>
                 <p>Their goal is to keep the prices as low as possible and not earn money on their customers. </p>
             </div>
 
@@ -138,56 +139,48 @@ function Motkraft() {
 
             {/* Process */}
 
-            <div className='max-w-screen-lg mx-auto flex flex-row justify-center space-x-28 mt-28 px-20'>
+            <div className='max-w-screen-lg w-full m-auto flex flex-row justify-center mt-28'>
 
-                <div className='text-[30px]'>
+                <div className='text-[30px] w-1/2'>
                     <p className='justify-start'>Research & Design Thinking</p>
                 </div>
 
-                <div className='space-y-10 justify-start'>
+                <div className='flex sm:flex-wrap w-1/2 flex-col sm:flex-row'>
 
-                    <div className='flex justify-start space-x-16'>
-                        <div>
+                        <div className='flex gap-8 w-1/2 mt-2 mb-8'>
                             <p className="text-lynette-red">1.</p>
                             <p>Competitive analysis</p>
                         </div>
-                        <div>
+                        <div className='flex gap-8 w-1/2 mt-2 mb-8'>
                             <p className="text-lynette-red">2.</p>
                             <p>Customer journey</p>
                         </div>
-                    </div>
 
-                    <div className='flex justify-start space-x-36'>
-                        <div>
+                        <div className='flex gap-8 w-1/2 my-8'>
                             <p className="text-lynette-red">3.</p>
                             <p>Personas</p>
                         </div>
-                        <div>
+                        <div className='flex gap-8 w-1/2 my-8'>
                             <p className="text-lynette-red">4.</p>
                             <p>User interviews</p>
                         </div>
-                    </div>
 
-                    <div className='flex justify-start space-y-20'>
-                        <div>
+                        <div className='flex gap-8 w-1/2 my-8'>
                             <p className="text-lynette-red">5.</p>
                             <p>Sketches and Wireframing</p>
                         </div>
-                        <div>
+                        <div className='flex gap-8 w-1/2 my-8'>
                             <p className="text-lynette-red">6.</p>
                             <p>Information archetecture</p>
                         </div>
-                    </div>
                     
-                    <div className='flex justify-start'>
-                        <div>
+                        <div className='flex gap-8 w-1/2 my-8'>
                             <p className="text-lynette-red">7.</p>
                             <p>User testing</p>
                         </div>
                         <div>
                             <p></p>
                         </div>
-                    </div>
 
                     <div className='max-w-screen-lg flex mt-10 mb-10 px-20'>
                         <p>By synthesising the research findings, we were able to identify several key areas for improvement in the app redesign. </p>
